@@ -1,11 +1,11 @@
-function drawTriangle(numRows, numCols, boxChar) {
+function drawTriangle(numRows, numCols){
    for (let i = 0; i < numRows; i++){
-      let boxChar = "";
-      for (let j = 0; j <  numCols; j++){
-         boxChar = "*";
+      let boxChar = "*";
+      for (let j = 0; j < i; j++){
+         boxChar += "*";
       }
+      console.log(boxChar);
    }
-   console.log(boxChar);
 }
-
 drawTriangle(4, 4);
+
